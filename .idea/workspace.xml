@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextFileML.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dia-log-ue.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/CharacterLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/ResponseLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/SetUpFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="CharacterLogic">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -87,6 +76,14 @@
       <option name="presentableId" value="Default" />
       <updated>1662477565991</updated>
     </task>
+    <task id="LOCAL-00001" summary="CharacterLogic">
+      <created>1662637303598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662637303598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,5 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="CharacterLogic" />
+    <option name="LAST_COMMIT_MESSAGE" value="CharacterLogic" />
   </component>
 </project>
