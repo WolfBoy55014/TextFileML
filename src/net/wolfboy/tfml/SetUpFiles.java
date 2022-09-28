@@ -18,7 +18,16 @@ public class SetUpFiles {
                 System.out.println("File " + file.getName() + " already exists.");
             }
         } catch (IOException e) {
-            System.out.println("Whoops! ");
+            e.printStackTrace();
+        }
+        try {
+            File file = new File("var2.txt");
+            if (file.createNewFile()) {
+                System.out.println("File created: " + file.getName());
+            } else {
+                System.out.println("File " + file.getName() + " already exists.");
+            }
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -1,0 +1,12 @@
+B-LE;Hello
+H-AH;What's up?
+B-AH;Thank you
+H-EO;You're Welcome!
+U-AR;What is your name?
+H-__;My name is TurAI
+U-OR;What is your favorite color?
+H-__;ORANGE!
+B-LE;Hello
+H-AH;HI!, and Hello!
+B-OA;How are you?
+H-OD;Good!
