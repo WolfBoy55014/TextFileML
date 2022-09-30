@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="CharacterLogic">
-      <change afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="IfBasic Is Now Smart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dia-log-ue.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/CharacterLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/FindAndStoreCharacterCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/ResponseLogic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/SetUpFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/SetUpFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +93,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662669571360</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AfBasic Is Now Smart">
+      <created>1664405830145</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664405830145</updated>
+    </task>
+    <task id="LOCAL-00004" summary="IfBasic Is Now Smart">
+      <created>1664405877753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664405877753</updated>
+    </task>
+    <task id="LOCAL-00005" summary="IfBasic Is Now Smart">
+      <created>1664405951540</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664405951540</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +131,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="CharacterLogic" />
-    <option name="LAST_COMMIT_MESSAGE" value="CharacterLogic" />
+    <MESSAGE value="AfBasic Is Now Smart" />
+    <MESSAGE value="IfBasic Is Now Smart" />
+    <option name="LAST_COMMIT_MESSAGE" value="IfBasic Is Now Smart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

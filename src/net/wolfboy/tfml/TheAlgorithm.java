@@ -3,10 +3,12 @@ package net.wolfboy.tfml;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
+import java.util.stream.Stream;
 
 public class TheAlgorithm {
     static public String ChoosingResponse(Boolean debug, Boolean useSimpleAlgorithm, String input) throws IOException {
@@ -14,10 +16,10 @@ public class TheAlgorithm {
         String character;
         String firstChar = "";
         String secondChar = "";
-        String whatYOUSaid = "";
+        String currentLineRead = "";
         String firstCharOfPendingResponse = "";
         String secondCharOfPendingResponse = "";
-        String response = "";
+        String response = "*silence*";
         String plausibleResponse = "";
         Path var = Path.of("var.txt");
         try {
@@ -45,45 +47,56 @@ public class TheAlgorithm {
         }
         if (debug) {
             System.out.println("The Value of The First most Common Character (From Class: TheAlgorithm): " + firstChar);
-            System.out.println("The Value of The second most Common Character (From Class: TheAlgorithm): " + secondChar);
+            System.out.println("The Value of The Second most Common Character (From Class: TheAlgorithm): " + secondChar);
         }
+        long count = 0;
 
-        // Saves whole Log file to ArrayList
-        BufferedReader bufReader = new BufferedReader(new FileReader(log));
-        ArrayList<String> wholeLog = new ArrayList<>();
+        Path logPath = Path.of("log.txt");
+        try {
+            // make a connection to the file
 
-        String line = bufReader.readLine();
-        while (line != null) {
-            wholeLog.add(line);
-            line = bufReader.readLine();
+            // read all lines of the file
+            count = Files.lines(logPath).count();
+
+        } catch (Exception e) {
+            e.getStackTrace();
         }
-
-        bufReader.close();
 
         // Loops through ArrayList, looking for a Match
         if (useSimpleAlgorithm) {
-            for (int i = wholeLog.size() - 1; i >= 0; i--) {
-                whatYOUSaid = wholeLog.get(i);
+            for (long i = count - 1; i >= 0; i--) {
 
-                if (debug) {
-                    System.out.println("Line Reading: " + i + ", Contents: " + wholeLog.get(i));
+                try (Stream<String> lines = Files.lines(logPath)) {
+                    currentLineRead = lines.skip(i).findFirst().get();
+                }
+                catch(IOException e){
+                    System.out.println(e);
                 }
 
-                firstCharOfPendingResponse = String.valueOf(whatYOUSaid.charAt(2));
-                secondCharOfPendingResponse = String.valueOf(whatYOUSaid.charAt(3));
+                if (debug) {
+                    System.out.println("Line Reading: " + i + ", Contents: " + currentLineRead);
+                }
+
+                firstCharOfPendingResponse = String.valueOf(currentLineRead.charAt(2));
+                secondCharOfPendingResponse = String.valueOf(currentLineRead.charAt(3));
 
                 firstCharOfPendingResponse = firstCharOfPendingResponse.toLowerCase();
                 secondCharOfPendingResponse = secondCharOfPendingResponse.toLowerCase();
 
                 if (Objects.equals(firstChar, firstCharOfPendingResponse)) {
                     if (Objects.equals(secondChar, secondCharOfPendingResponse)) {
-                        if (Objects.equals(whatYOUSaid.substring(0, 1), "B") || Objects.equals(whatYOUSaid.substring(0, 1), "U")) {
+                        if (Objects.equals(currentLineRead.substring(0, 1), "B") || Objects.equals(currentLineRead.substring(0, 1), "U")) {
                             if (debug) {
                                 System.out.println("BEEEP");
-                                System.out.println("What we determined you said: " + whatYOUSaid.substring(5));
+                                System.out.println("What we determined you said: " + currentLineRead.substring(5));
                             }
 
-                            plausibleResponse = wholeLog.get(i + 1);
+                            try (Stream<String> lines = Files.lines(logPath)) {
+                                plausibleResponse = lines.skip(i + 1).findFirst().get();
+                            }
+                            catch(IOException e){
+                                System.out.println(e);
+                            }
 
                             response = plausibleResponse.substring(5);
                             break;

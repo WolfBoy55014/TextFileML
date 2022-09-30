@@ -10,3 +10,7 @@ B-LE;Hello
 H-AH;HI!, and Hello!
 B-OA;How are you?
 H-OD;Good!
+B-HI;HI!
+H-OE;Hello, How are you?
+B-OD;Good!
+H-AE;Great!
