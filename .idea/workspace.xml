@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="IfBasic Optimized for RAM usage, Log updated">
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Implemented Levenshtein Distance Calculations for Advanced comparison">
+      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
@@ -56,7 +54,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="net.wolfboy.tfml.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="net.wolfboy.tfml.Main" />
       <module name="TextFileML" />
       <extension name="coverage">
@@ -126,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664500133242</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented Levenshtein Distance Calculations for Advanced comparison">
+      <created>1665177111044</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665177111044</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +151,8 @@
     <MESSAGE value="AfBasic Is Now Smart" />
     <MESSAGE value="IfBasic Is Now Smart" />
     <MESSAGE value="IfBasic Optimized for RAM usage, Log updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="IfBasic Optimized for RAM usage, Log updated" />
+    <MESSAGE value="Implemented Levenshtein Distance Calculations for Advanced comparison" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Levenshtein Distance Calculations for Advanced comparison" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -118,12 +118,18 @@ public class TheAlgorithm {
                     // Clean up read strings, and save its command type
                     String commandType = currentLineRead.substring(0, 1);
                     currentLineRead = currentLineRead.substring(5);
+                    if (debug) {
+                        System.out.println("Contents of Line: " + currentLineRead);
+                    }
                     currentLineRead = FindAndStoreCharacterCount.PrepareString(currentLineRead);
 
                     int similarity = TheAlgorithm.getLevenshteinDistance(currentLineRead, preparedInput);
+                    if (debug) {
+                        System.out.println("Similarity: " + similarity);
+                    }
 
                     // The remastered "more advanced" if statement
-                    if (similarity == tolerance && commandType.equals("B")) {
+                    if (similarity == tolerance && !commandType.equals("H")) {
                         try (Stream<String> lines = Files.lines(logPath)) {
                             response = lines.skip(i + 1).findFirst().get();
                             response = response.substring(5);
