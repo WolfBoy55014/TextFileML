@@ -4,10 +4,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class TheAlgorithm {
@@ -68,8 +65,7 @@ public class TheAlgorithm {
 
                 try (Stream<String> lines = Files.lines(logPath)) {
                     currentLineRead = lines.skip(i).findFirst().get();
-                }
-                catch(IOException e){
+                } catch (IOException e) {
                     System.out.println(e);
                 }
 
@@ -93,8 +89,7 @@ public class TheAlgorithm {
 
                             try (Stream<String> lines = Files.lines(logPath)) {
                                 plausibleResponse = lines.skip(i + 1).findFirst().get();
-                            }
-                            catch(IOException e){
+                            } catch (IOException e) {
                                 System.out.println(e);
                             }
 
@@ -107,50 +102,69 @@ public class TheAlgorithm {
         } else {
             // ALL RIGHTY THE MEAT!
 
+            // Clean up input
             String preparedInput = FindAndStoreCharacterCount.PrepareString(input);
 
+            int tolerance = 0;
+                for (long i = count - 1; i >= 0; i--) {
+
+                    // Reading the Line in the Log (The turing part!)
+                    try (Stream<String> lines = Files.lines(logPath)) {
+                        currentLineRead = lines.skip(i).findFirst().get();
+                    } catch (IOException e) {
+                        System.out.println(e);
+                    }
+
+                    // Clean up read strings, and save its command type
+                    String commandType = currentLineRead.substring(0, 1);
+                    currentLineRead = currentLineRead.substring(5);
+                    currentLineRead = FindAndStoreCharacterCount.PrepareString(currentLineRead);
+
+                    int similarity = TheAlgorithm.getLevenshteinDistance(currentLineRead, preparedInput);
+
+                    // The remastered "more advanced" if statement
+                    if (similarity == tolerance && commandType.equals("B")) {
+                        try (Stream<String> lines = Files.lines(logPath)) {
+                            response = lines.skip(i + 1).findFirst().get();
+                            response = response.substring(5);
+                        } catch (IOException e) {
+                            System.out.println(e);
+                        }
+                        break;
+                // Whole block made to Decrease the tolerance, and start again
+                } else if (i == 0) {
+                        i = count - 1;
+                        tolerance++;
+                    }
+                }
 
 
         }
         return response;
     }
 
-
-
-
-    static int countPairsOfStrings(String s1, int n1,
-                          String s2, int n2)
+    public static int getLevenshteinDistance(String X, String Y)
     {
+        int m = X.length();
+        int n = Y.length();
 
-        // To store the frequencies of characters
-        // of string s1 and s2
-        int []freq1 = new int[26];
-        int []freq2 = new int[26];
-        Arrays.fill(freq1, 0);
-        Arrays.fill(freq2, 0);
+        int[][] T = new int[m + 1][n + 1];
+        for (int i = 1; i <= m; i++) {
+            T[i][0] = i;
+        }
+        for (int j = 1; j <= n; j++) {
+            T[0][j] = j;
+        }
 
-        // To store the count of valid pairs
-        int i, count = 0;
+        int cost;
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                cost = X.charAt(i - 1) == Y.charAt(j - 1) ? 0: 1;
+                T[i][j] = Integer.min(Integer.min(T[i - 1][j] + 1, T[i][j - 1] + 1),
+                        T[i - 1][j - 1] + cost);
+            }
+        }
 
-        // Update the frequencies of
-        // the characters of string s1
-        for (i = 0; i < n1; i++)
-            freq1[s1.charAt(i) - 'a']++;
-
-        // Update the frequencies of
-        // the characters of string s2
-        for (i = 0; i < n2; i++)
-            freq2[s2.charAt(i) - 'a']++;
-
-        // Find the count of valid pairs
-        for (i = 0; i < 26; i++)
-            count += (Math.min(freq1[i], freq2[i]));
-
-        return count;
-    }
-
-
-    public static int getRandomNumber(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
+        return T[m][n];
     }
 }

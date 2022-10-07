@@ -14,3 +14,5 @@ B-HI;HI!
 H-OE;Hello, How are you?
 B-OD;Good!
 H-AE;Great!
+B-AS;I am Sad.
+H-OA;Too Bad...

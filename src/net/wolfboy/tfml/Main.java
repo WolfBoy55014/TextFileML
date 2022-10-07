@@ -1,12 +1,13 @@
 package net.wolfboy.tfml;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         Boolean debug = false;
-        Boolean useSimpleAlgorithm = true;
+            Boolean useSimpleAlgorithm = false;
         SetUpFiles.MakeFiles();
 
         while (true) {
@@ -14,8 +15,16 @@ public class Main {
 
             System.out.print("[YOU] ");
             String input = inputScanner.nextLine();
-            FindAndStoreCharacterCount.MakeCharacterCount(input, debug);
-            System.out.println("[BOT] " + TheAlgorithm.ChoosingResponse(debug, useSimpleAlgorithm, input));
+            if (Objects.equals(input, "Toggle method")) {
+                if (useSimpleAlgorithm) {
+                    useSimpleAlgorithm = false;
+                } else {
+                    useSimpleAlgorithm = true;
+                }
+            } else {
+                FindAndStoreCharacterCount.MakeCharacterCount(input, debug);
+                System.out.println("[BOT] " + TheAlgorithm.ChoosingResponse(debug, useSimpleAlgorithm, input));
+            }
         }
     }
 }
