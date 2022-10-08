@@ -16,3 +16,7 @@ B-OD;Good!
 H-AE;Great!
 B-AS;I am Sad.
 H-OA;Too Bad...
+B-O_;What Color do you like?
+H-EO;I like the color Orange...
+B-LE;Hello
+H-OA;How are you Today?
