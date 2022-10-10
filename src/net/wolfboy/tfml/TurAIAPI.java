@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class TurAIAPI {
 
-    public static String IOHandler(String input, boolean useSimpleAlgorithm, Boolean debug) throws IOException {
+    public static String IOHandler(String input, boolean useSimpleAlgorithm, Boolean debug, int initialTolerance) throws IOException {
                 if (useSimpleAlgorithm) {
                     FindAndStoreCharacterCount.MakeCharacterCount(input, debug);
                 }
-                return TheAlgorithm.ChoosingResponse(debug, useSimpleAlgorithm, input);
+                return TheAlgorithm.ChoosingResponse(debug, useSimpleAlgorithm, input, initialTolerance);
             }
         }

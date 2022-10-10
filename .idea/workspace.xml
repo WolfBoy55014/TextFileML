@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Added main input Handler, Fixed bug with unlearnables">
-      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/LogWriter.java" afterDir="false" />
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Added LogWriter Utility">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var2.txt" afterDir="false" />
     </list>
@@ -27,6 +28,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.net.wolfboy.tfml.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665178425388</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Created LogWriter Utility">
+      <created>1665249744100</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665249744100</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added LogWriter Utility">
+      <created>1665249794207</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665249794207</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +176,9 @@
     <MESSAGE value="IfBasic Optimized for RAM usage, Log updated" />
     <MESSAGE value="Implemented Levenshtein Distance Calculations for Advanced comparison" />
     <MESSAGE value="Added main input Handler, Fixed bug with unlearnables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added main input Handler, Fixed bug with unlearnables" />
+    <MESSAGE value="Created LogWriter Utility" />
+    <MESSAGE value="Added LogWriter Utility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added LogWriter Utility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

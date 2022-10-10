@@ -28,7 +28,7 @@ public class Main {
                         break;
                     }
 
-                    String output = TurAIAPI.IOHandler(input, false, false);
+                    String output = TurAIAPI.IOHandler(input, false, false, 0);
 
                     System.out.println("[BOT] " + output);
                 }

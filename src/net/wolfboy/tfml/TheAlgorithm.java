@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.Stream;
 
 public class TheAlgorithm {
-    static public String ChoosingResponse(Boolean debug, Boolean useSimpleAlgorithm, String input) throws IOException {
+    static public String ChoosingResponse(Boolean debug, Boolean useSimpleAlgorithm, String input, int initialTolerance) throws IOException {
         File log = new File(("log.txt"));
         String character;
         String firstChar = "";
@@ -102,11 +102,13 @@ public class TheAlgorithm {
         } else {
             // ALL RIGHTY THE MEAT!
 
+            long startingPoint = getRandomNumber(1, count);
+
             // Clean up input
             String preparedInput = FindAndStoreCharacterCount.PrepareString(input);
 
-            int tolerance = 0;
-                for (long i = count - 1; i >= 0; i--) {
+            int tolerance = initialTolerance;
+                for (long i = startingPoint - 1; i >= 0; i--) {
 
                     // Reading the Line in the Log (The turing part!)
                     try (Stream<String> lines = Files.lines(logPath)) {
@@ -129,7 +131,7 @@ public class TheAlgorithm {
                     }
 
                     // The remastered "more advanced" if statement
-                    if (similarity == tolerance && !commandType.equals("H")) {
+                    if (similarity <= tolerance && !commandType.equals("H")) {
                         try (Stream<String> lines = Files.lines(logPath)) {
                             response = lines.skip(i + 1).findFirst().get();
                             response = response.substring(5);
@@ -172,5 +174,9 @@ public class TheAlgorithm {
         }
 
         return T[m][n];
+    }
+
+    public static long getRandomNumber(long min, long max) {
+        return Math.round ((int) ((Math.random() * (max - min)) + min));
     }
 }

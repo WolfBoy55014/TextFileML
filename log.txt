@@ -20,3 +20,47 @@ B-O_;What Color do you like?
 H-EO;I like the color Orange...
 B-LE;Hello
 H-OA;How are you Today?
+B-OA;How are you?
+H-EI;I am doing very well
+B-OG;Good Morning
+H-LE;Hello!
+B-EG;Good Evening!
+H-HL;Why hello!
+B-GO;Good Night
+H-ET;Sleep Tight!
+B-AH;Thanks!
+H-EO;You're Welcome!
+U-AO;What can you do?
+H-NO;I can respond to you, and somewhat, think.
+U-AO;What are you doing?
+H-EN;Ohh, Only finding the answer to Life, The Universe, and Everything.
+B-AG;I am doing Great!
+H-DE;Wonderful!
+B-DA;Thanks dude
+H-EO;Your Welcome!
+B-TA;Talk to you later!
+H-E_;Bye! See you later, if I have eyes...
+B-AN;Say anything
+H-OB;BOO!
+B-OT;Do you want to rule the world?
+H-O_;No, I wouldn't know how to do it...
+B-NS;Say something funny
+H-AE;Why can’t you send a duck to space?   Because the bill would be astronomical!
+B-EL;Tell me a Joke
+H-ET;What did one plate say to the other?   Dinner is on me!
+B-OH;What do you think of me?
+H-NT;Nothing, I don't think...
+B-OE;Do you love me?
+H-IC;If I could.
+B-YA;Can you fly?
+H-OS;No, These PC fans are too slow.
+B-HW;Why?
+H-EA;Oh, Because
+B-LE;Well
+H-KO;OK
+B-KO;Ok
+H-ES;I see...
+B-BE;Bye
+H-OB;Goodbye
+B-AE;Great!
+H-O_;Good for you.
