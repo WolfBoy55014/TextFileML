@@ -64,3 +64,51 @@ B-BE;Bye
 H-OB;Goodbye
 B-AE;Great!
 H-O_;Good for you.
+H-LE;Hello
+B-OA;How are you Today?
+H-IN;I am doing fine
+B-DE;Wonderful!
+H-AO;And how are you?
+B-EI;I am doing very well
+H-O_;Good for you!
+B-LE;Hello!
+H-HI;Hi
+B-OE;Hello, How are you?
+H-AD;You already asked, I am doing good
+B-DE;Wonderful!
+H-OY;How is your day?
+B-IN;I am doing fine
+H-KO;Ok
+B-ES;I see...
+H-EA;See what?
+B-O_;Good for you.
+H-OT;Me too!
+B-HI;Hi
+H-EA;Can you tell me a joke?
+B-ET;What did one plate say to the other?   Dinner is on me!
+H-I_;Ha! I like it!
+B-EA;Can you tell me a joke?
+H-KO;Ok
+B-ES;I see...
+H-BE;Bye!
+B-OB;Goodbye
+B-EA;Can you tell me a Joke?
+H-RA;Sure, What is red and bad for your teeth? A Brick!
+H-DO;Good day!
+B-EA;Can you tell me a Joke?
+H-EA;What is red and smells like Blue Paint? Red Paint!
+B-I_;Ha! I like it!
+H-AH;Thank you!
+B-EO;You're Welcome!
+H-EL;Can you tell me one?
+B-EA;What is red and smells like Blue Paint? Red Paint!
+H-TA;That's mine!
+B-EO;Your Welcome!
+H-OB;Good bye!
+B-EA;Can you tell me a Joke?
+H-HW;Why sure! Why do humming birds hum? Because they don't know thw words!
+B-TA;That's mine!
+H-NO;No, its not!
+B-BE;Bye!
+H-BE;Bye
+B-OB;Goodbye

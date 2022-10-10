@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Added LogWriter Utility">
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Updated Log, Randomized Output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var2.txt" afterDir="false" />
     </list>
@@ -154,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665249794207</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updated Log, Randomized Output">
+      <created>1665361088785</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665361088785</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +183,8 @@
     <MESSAGE value="Added main input Handler, Fixed bug with unlearnables" />
     <MESSAGE value="Created LogWriter Utility" />
     <MESSAGE value="Added LogWriter Utility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added LogWriter Utility" />
+    <MESSAGE value="Updated Log, Randomized Output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Log, Randomized Output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

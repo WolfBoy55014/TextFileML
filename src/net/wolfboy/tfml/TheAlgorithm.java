@@ -18,6 +18,8 @@ public class TheAlgorithm {
         String secondCharOfPendingResponse = "";
         String response = "*silence*";
         String plausibleResponse = "";
+        String commandType = "";
+        String preservedInput = input;
         Path var = Path.of("var.txt");
         try {
             // Creates a FileWriter
@@ -118,7 +120,7 @@ public class TheAlgorithm {
                     }
 
                     // Clean up read strings, and save its command type
-                    String commandType = currentLineRead.substring(0, 1);
+                    commandType = currentLineRead.substring(0, 1);
                     currentLineRead = currentLineRead.substring(5);
                     if (debug) {
                         System.out.println("Contents of Line: " + currentLineRead);
@@ -147,6 +149,10 @@ public class TheAlgorithm {
                 }
 
 
+        }
+        if (!commandType.equals("U")) {
+            LogWriter.WriteLineInLog("H", preservedInput);
+            LogWriter.WriteLineInLog("B", response);
         }
         return response;
     }
