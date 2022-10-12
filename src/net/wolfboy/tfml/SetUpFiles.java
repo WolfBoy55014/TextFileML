@@ -30,6 +30,16 @@ public class SetUpFiles {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            File file = new File("log.txt");
+            if (file.createNewFile()) {
+                System.out.println("File created: " + file.getName());
+            } else {
+                System.out.println("File " + file.getName() + " already exists.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
