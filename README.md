@@ -31,3 +31,9 @@ The next is the Boolean `useSimpleAlgorithm`, this defines which method the API 
 The third parrameter sets debug mode. A boolean of `true` will turn it on, otherwise keep it off with `false`.
 
 The last int `initialTolerance` is the initial tolerance the Levenshtein Calculations use to find the responce, mabye set it to 1-2 for large datasets to improve speed, but otherwise, set it to 0.
+
+### Use the built-in Main file to use the base UI, if you want to use it. or a Discord bot is being worked on.
+
+# Setup
+### Setup is a little weird, but it will improve.
+First, if you get a outOfBoundsException, try inserting a `_` into var2.txt, and filling out at least 1 input-responce (or *two* lines) in the log.txt, or just use [mine from this repo](../master/log.txt)...
