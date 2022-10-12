@@ -26,4 +26,8 @@ or a variable,
 ```java
 String thisIsAString = "Hello!";
 ```
-  
+The next is the Boolean `useSimpleAlgorithm`, this defines which method the API should use for comparing strings. Setting it to `true` uses a more exact output in smaller datasets, and won't respond if it doesn't find a sufficient match. The Simple Algorithm or `IfBasic` would be better for a smaller Q&A dataset. Setting it to `false` uses Levenshtein Distance calculations to determine the most accurate response to the input. The Levenshtein method is better with larger data sets, and may give inaccurate answers if the dataset is too small because it will always output the *best* (not always *good*) response.
+
+The third parrameter sets debug mode. A boolean of `true` will turn it on, otherwise keep it off with `false`.
+
+The last int `initialTolerance` is the initial tolerance the Levenshtein Calculations use to find the responce, mabye set it to 1-2 for large datasets to improve speed, but otherwise, set it to 0.
