@@ -14,6 +14,13 @@ public class Main {
         SetUpFiles.MakeFiles();
 
         Scanner inputScanner = new Scanner(System.in);
+        System.out.println("  _______                _____ ");
+        System.out.println(" |__   __|         /    |_   _|");
+        System.out.println("    | |_   _ _ __ /  \\    | |  ");
+        System.out.println("    | | | | | '__/ /  \\   | |  ");
+        System.out.println("    | | |_| | | / ____ \\ _| |_ ");
+        System.out.println("    |_|\\__,_|_|/_/    \\_|_____|");
+
         System.out.println("Welcome to the included UI. Choose a Mode.");
             System.out.print("(Writer / Conversation): ");
             String input = inputScanner.nextLine();

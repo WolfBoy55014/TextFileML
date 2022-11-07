@@ -111,4 +111,35 @@ B-TA;That's mine!
 H-NO;No, its not!
 B-BE;Bye!
 H-BE;Bye
-B-OB;Goodbye
+B-OB;GoodbyeH-OA;How are you?
+B-OD;Good!
+H-EA;Can you tell me a joke?
+B-HW;Why sure! Why do humming birds hum? Because they don't know the words!
+H-IT;Thank you! I like it!
+B-AH;Thank you!
+H-BE;Bye
+B-BE;Bye
+H-LE;hello!
+B-HI;Hi
+H-LE;Hello
+B-OA;How are you Today?
+H-OD;I am doing good
+B-KO;Ok
+H-BE;Bye
+B-LE;hello!
+B-AE;Pancakes are yummy
+H-MU;Yum, yum!
+H-AE;Panecakes ar yumm
+B-MU;Yum, yum!
+H-AD;hej pa dig
+B-AE;Pancakes are yummy
+H-EY;yes they are
+B-BE;Bye!
+H-OB;goodbye
+B-EA;Can you tell me a Joke?
+H-LE;Hello
+B-AE;Pancakes are yummy
+H-HI;Hi
+B-OE;Hello, How are you?
+H-OD;I am doing good
+B-KO;Ok
