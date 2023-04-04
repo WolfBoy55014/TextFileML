@@ -1,16 +1,14 @@
 package net.wolfboy.tfml;
 
-import com.sun.source.tree.WhileLoopTree;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        System.out.println("This Version has been Modified with Py4J");
+
         SetUpFiles.MakeFiles();
 
         Scanner inputScanner = new Scanner(System.in);

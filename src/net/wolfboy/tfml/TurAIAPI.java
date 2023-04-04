@@ -1,8 +1,6 @@
 package net.wolfboy.tfml;
 
 import java.io.IOException;
-import java.util.Objects;
-import java.util.Scanner;
 
 public class TurAIAPI {
 

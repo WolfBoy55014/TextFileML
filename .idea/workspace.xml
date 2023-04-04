@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TextFileML:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="IT LEARNS!">
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Base UI Upgraded">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextFileML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TextFileML.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/FindAndStoreCharacterCount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/LogWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/SetUpFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/SetUpFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/SetUpFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,8 +54,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Black Family/IdeaProjects/TurAI-DiscordBot",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "last_opened_file_path": "C:/Users/Black Family/IdeaProjects/TextFileML - For Python",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager">
@@ -169,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665419174975</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Base UI Upgraded">
+      <created>1667791984463</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667791984463</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Base UI Upgraded">
+      <created>1667792026694</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667792026694</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +214,8 @@
     <MESSAGE value="Added LogWriter Utility" />
     <MESSAGE value="Updated Log, Randomized Output" />
     <MESSAGE value="IT LEARNS!" />
-    <option name="LAST_COMMIT_MESSAGE" value="IT LEARNS!" />
+    <MESSAGE value="Base UI Upgraded" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base UI Upgraded" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

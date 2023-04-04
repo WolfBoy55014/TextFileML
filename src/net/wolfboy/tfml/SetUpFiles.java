@@ -2,10 +2,6 @@ package net.wolfboy.tfml;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class SetUpFiles {
     // Makes a temp file for variable saving (silly, right?)

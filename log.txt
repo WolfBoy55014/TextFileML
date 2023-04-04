@@ -143,3 +143,5 @@ H-HI;Hi
 B-OE;Hello, How are you?
 H-OD;I am doing good
 B-KO;Ok
+H-LE;Hello
+B-HI;Hi
