@@ -145,3 +145,13 @@ H-OD;I am doing good
 B-KO;Ok
 H-LE;Hello
 B-HI;Hi
+H-HI;Hi
+B-OE;Hello, How are you?
+H-GI;Im doing Great!
+B-DE;Wonderful!
+H-OA;How are you?
+B-EI;I am doing very well
+H-EA;Nice to hear!
+B-BE;Bye!
+H-BE;ok, Bye
+B-OB;goodbye
