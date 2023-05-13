@@ -8,45 +8,25 @@ import java.util.stream.Stream;
 
 public class TheAlgorithm {
     static public String ChoosingResponse(Boolean debug, Boolean useSimpleAlgorithm, String input, int initialTolerance) throws IOException {
-        File log = new File(("log.txt"));
-        String character;
-        String firstChar = "";
-        String secondChar = "";
         String currentLineRead = "";
         String firstCharOfPendingResponse = "";
         String secondCharOfPendingResponse = "";
         String response = "*silence*";
         String plausibleResponse = "";
         String commandType = "";
-        String preservedInput = input;
-        Path var = Path.of("var.txt");
-        try {
-            // Creates a FileWriter
-            FileWriter file = new FileWriter("var.txt", true);
 
-            // Creates a BufferedWriter
-            BufferedWriter output = new BufferedWriter(file);
+        String firstChar = "";
+        String secondChar = "";
 
-            // Writes the letter to the file
-            output.write("_");
-
-            // Writes new line before the next letter
-            output.newLine();
-
-            // Closes the writer
-            output.close();
-
-            character = Files.readAllLines(var).get(0);
-            firstChar = character;
-            character = Files.readAllLines(var).get(1);
-            secondChar = character;
-        } catch (IOException e) {
-            System.out.println(e);
+        if (useSimpleAlgorithm) {
+            firstChar = Parsing.mostCommonCharacters.get(0).toLowerCase();
+            secondChar = Parsing.mostCommonCharacters.get(1).toLowerCase();
+            if (debug) {
+                System.out.println("The Value of The First most Common Character (From Class: TheAlgorithm): " + firstChar);
+                System.out.println("The Value of The Second most Common Character (From Class: TheAlgorithm): " + secondChar);
+            }
         }
-        if (debug) {
-            System.out.println("The Value of The First most Common Character (From Class: TheAlgorithm): " + firstChar);
-            System.out.println("The Value of The Second most Common Character (From Class: TheAlgorithm): " + secondChar);
-        }
+
         long count = 0;
 
         Path logPath = Path.of("log.txt");
@@ -85,7 +65,7 @@ public class TheAlgorithm {
                         if (Objects.equals(currentLineRead.substring(0, 1), "B") || Objects.equals(currentLineRead.substring(0, 1), "U")) {
                             if (debug) {
                                 System.out.println("BEEEP");
-                                System.out.println("What we determined you said: " + currentLineRead.substring(5));
+                                System.out.println("We determined you said: " + currentLineRead.substring(5));
                             }
 
                             try (Stream<String> lines = Files.lines(logPath)) {
@@ -106,7 +86,7 @@ public class TheAlgorithm {
             long startingPoint = getRandomNumber(1, count);
 
             // Clean up input
-            String preparedInput = FindAndStoreCharacterCount.PrepareString(input);
+            String preparedInput = Parsing.PrepareString(input);
 
             int tolerance = initialTolerance;
                 for (long i = startingPoint - 1; i >= 0; i--) {
@@ -124,7 +104,7 @@ public class TheAlgorithm {
                     if (debug) {
                         System.out.println("Contents of Line: " + currentLineRead);
                     }
-                    currentLineRead = FindAndStoreCharacterCount.PrepareString(currentLineRead);
+                    currentLineRead = Parsing.PrepareString(currentLineRead);
 
                     int similarity = TheAlgorithm.getLevenshteinDistance(currentLineRead, preparedInput);
                     if (debug) {
@@ -150,7 +130,7 @@ public class TheAlgorithm {
 
         }
         if (!commandType.equals("U")) {
-            LogWriter.WriteLineInLog("H", preservedInput);
+            LogWriter.WriteLineInLog("H", input);
             LogWriter.WriteLineInLog("B", response);
         }
         return response;

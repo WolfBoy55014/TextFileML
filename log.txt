@@ -129,7 +129,7 @@ H-BE;Bye
 B-LE;hello!
 B-AE;Pancakes are yummy
 H-MU;Yum, yum!
-H-AE;Panecakes ar yumm
+H-AE;Pancakes are yum
 B-MU;Yum, yum!
 H-AD;hej pa dig
 B-AE;Pancakes are yummy
@@ -153,5 +153,3 @@ H-OA;How are you?
 B-EI;I am doing very well
 H-EA;Nice to hear!
 B-BE;Bye!
-H-BE;ok, Bye
-B-OB;goodbye

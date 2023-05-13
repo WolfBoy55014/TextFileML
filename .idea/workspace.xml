@@ -9,10 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Base UI Upgraded">
+    <list default="true" id="7f8d7540-781c-495a-88a4-a91b41d3ac48" name="Changes" comment="Python Notification removed">
+      <change afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Parsing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/FindAndStoreCharacterCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/FindAndStoreCharacterCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/LogWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/LogWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TheAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/wolfboy/tfml/TurAIAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/var2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/var2.txt" afterDir="false" />
     </list>
@@ -185,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667792026694</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Python Notification removed">
+      <created>1682979137811</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682979137811</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +223,8 @@
     <MESSAGE value="Updated Log, Randomized Output" />
     <MESSAGE value="IT LEARNS!" />
     <MESSAGE value="Base UI Upgraded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base UI Upgraded" />
+    <MESSAGE value="Python Notification removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Python Notification removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
